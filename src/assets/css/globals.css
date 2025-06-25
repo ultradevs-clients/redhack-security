@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+@import "./base/common.css";
+@import "./navbar/navbar.css";
+@import "./mobileSidebar/mobileSidebar.css";
+@import "./banner/banner.css";
+@import "./service/service.css";
+@import "./our-service/our-service.css";
+@import "./blog/blog.css";
+@import "./cta/cta.css";
+@import "./redhack-certificate/redhack-certificate.css";
+@import "./footer/footer.css";
+
+/* Pentest Page */
+
+@import "./pentest/services/services.css";
+@import "./pentest/service-details/servive-details.css";
+@import "./pentest/cta/cta.css";
+@import "./pentest/wstg/wstg.css";
+@import "./pentest/pentesting-details/pentesting-details.css";

@@ -1,0 +1,75 @@
+@theme {
+  --color-main: #e60000;
+  --color-background: #ffffff;
+  --color-accent: #000000;
+  --font-inter: "Inter";
+  --font-gilroy: "Gilroy";
+}
+
+body {
+  background-image: url("../../images/bg-cta.jpeg");
+}
+
+/* Typography */
+
+h1 {
+  @apply text-3xl xl:text-5xl font-bold font-gilroy  uppercase tracking-wide;
+}
+h2 {
+  @apply text-3xl lg:text-4xl font-semibold uppercase font-gilroy;
+}
+p {
+  @apply text-xl font-inter py-6;
+}
+
+/* Container */
+
+.container {
+  @apply md:w-11/12 xl:w-8/12 mx-auto;
+}
+
+/* Button */
+.btn {
+  @apply bg-main text-lg px-6 cursor-pointer duration-150 py-3 uppercase rounded-lg border border-main/60 font-inter font-semibold w-full lg:w-max;
+  box-shadow: 0px 0px 2px 2px var(--color-main);
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 6px var(--color-main);
+  }
+}
+
+.btn--outline {
+  @apply bg-transparent;
+}
+
+.btn--nav {
+  @apply bg-main/20 border-main/5 px-5 py-2 normal-case text-base;
+}
+.btn-service-card {
+  @apply lg:px-10 px-6 cursor-pointer duration-150 py-5 rounded-lg font-gilroy font-semibold text-xl;
+}
+
+/* In your global CSS (e.g., index.css or App.css) */
+.scrollbar-hide {
+  &::-webkit-scrollbar-button {
+    display: none; /* Hide top/bottom arrows */
+  }
+}
+
+.scrollbar-thin {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent; /* track background */
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-background/30;
+    border-radius: 8px;
+  }
+}
+
+.border-glow {
+  box-shadow: 0px 0px 10px 2px var(--color-main);
+}

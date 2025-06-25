@@ -1,0 +1,23 @@
+/* Navbar Dropdown */
+.nav {
+	.dropdown {
+		@apply relative cursor-pointer hover:text-main duration-100;
+		span {
+			@apply flex items-center gap-1 py-6;
+		}
+		&:hover {
+			.nav-dropdown {
+				@apply opacity-100 block;
+			}
+		}
+	}
+	.nav-dropdown {
+		@apply absolute z-50 opacity-0 hidden top-16  bg-background text-accent p-6 rounded-lg font-normal min-w-xs w-max;
+		h3 {
+			@apply font-semibold tracking-widest border-b border-main pb-2 w-full mb-4;
+		}
+		li {
+			@apply pb-2 hover:text-main duration-300 !font-semibold opacity-80 normal-case;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+/* Banner */
+.banner-container {
+	.banner {
+		background-image: url("../../images/banner-background.webp");
+		background-repeat: no-repeat;
+		@apply pt-18 lg:h-[700px] md:h-[650px] h-[580px] bg-cover bg-center bg-accent overflow-hidden;
+	}
+	.banner__bottom {
+		background-image: url("../../images/bg-texture.webp");
+		background-repeat: no-repeat;
+	}
+
+	.pentest {
+		background-image: url("../../images/pentest-banner-bg.webp");
+		@apply bg-top lg:h-[700px] h-max;
+	}
+}

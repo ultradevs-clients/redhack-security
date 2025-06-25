@@ -1,0 +1,32 @@
+.footer {
+   background-image: url('../../images/footer-mobile.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   @media (min-width: 1024px) {
+
+	background-image: url('../../images/bg-footer.png');
+	background-size: cover;
+	background-position-x: right;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+  
+}
+ .list {
+	@apply space-y-3;
+	 h3 {
+		@apply pb-3
+	 }
+	li:hover {
+		@apply text-main duration-200 cursor-pointer max-w-max;
+		text-shadow: 1px 1px 12px;
+	}
+ }
+ .copyright {
+	@apply font-gilroy text-gray-400 text-lg flex lg:flex-row flex-col-reverse items-center lg:gap-5 gap-2 lg:pt-10 pt-32 lg:pb-8 pb-24;
+	a:hover {
+		text-shadow: 1px 1px 12px;
+		@apply text-main duration-300 
+	}
+ }
+}
+

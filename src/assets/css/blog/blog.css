@@ -1,0 +1,8 @@
+.blog {
+  background-image: url('../../images/bg-texture3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .card{
+     @apply  duration-150 hover:scale-102 hover:translate-y-3
+  }
+}

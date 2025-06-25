@@ -1,0 +1,7 @@
+.service {
+  background-image: url('../../images/bg-texture2.png');
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: 700px;
+  @apply lg:bg-cover 
+}
