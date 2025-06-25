@@ -5,7 +5,7 @@ export default function ExposeWeakness() {
 	return (
 		<div className="cta lg:py-20 py-12 lg:px-0 px-5 text-center">
 			<div className="container">
-				<h1 className="text-main !font-extrabold !font-inter">
+				<h1 className="text-main !font-extrabold uppercase !font-inter">
 					Expose Weakness Before Threats Exploit Them
 				</h1>
 				<p className="!font-gilroy font-semibold uppercase !text-2xl">

@@ -15,11 +15,11 @@ export default function Footer() {
 			<div className="container flex lg:flex-row flex-col gap-12 ">
 				<div>
 					<Link className="text-3xl font-inter font-bold" href="/">
-						<Image src={logo} alt="Logo" className="w-64" />
+						<Image src={logo} alt="Logo" className="xl:w-64 w-52" />
 					</Link>
 				</div>
-				<section className="grid lg:grid-cols-4 xl:grid-cols-5 gap-10">
-					<ul className="text-lg font-gilroy list">
+				<section className="grid lg:grid-cols-5 gap-6 lg:gap-0 xl:gap-10">
+					<ul className=" xl:text-lg font-gilroy list">
 						<h3 className="text-xl font-semibold uppercase">
 							Products
 						</h3>
@@ -30,7 +30,7 @@ export default function Footer() {
 						<li>Live Hacking Events</li>
 					</ul>
 
-					<ul className="text-lg font-gilroy list">
+					<ul className=" xl:text-lg font-gilroy list">
 						<h3 className="text-xl font-semibold uppercase">
 							Researchers
 						</h3>
@@ -41,7 +41,7 @@ export default function Footer() {
 						<li>Dojo</li>
 					</ul>
 
-					<ul className="text-lg font-gilroy list">
+					<ul className=" xl:text-lg font-gilroy list">
 						<h3 className="text-xl font-semibold uppercase">
 							Resources
 						</h3>
@@ -53,7 +53,7 @@ export default function Footer() {
 						<li>Newsletter</li>
 					</ul>
 
-					<ul className="text-lg font-gilroy list">
+					<ul className=" xl:text-lg font-gilroy list">
 						<h3 className="text-xl font-semibold uppercase">
 							Company
 						</h3>
@@ -65,29 +65,29 @@ export default function Footer() {
 						<li>Contact</li>
 					</ul>
 
-					<div className="text-lg font-gilroy list">
+					<div className=" xl:text-lg font-gilroy list">
 						<h3 className="text-base !pb-2 tracking-widest font-semibold uppercase border-b border-main">
 							Follow us
 						</h3>
 						<ul className="flex items-center gap-5 lg:justify-between pt-2">
 							<li>
 								<a href="#">
-									<FaLinkedin className="text-3xl" />
+									<FaLinkedin className="text-2xl xl:text-3xl" />
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<FaXTwitter className="text-3xl" />
+									<FaXTwitter className="text-2xl xl:text-3xl" />
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<FaYoutube className="text-3xl" />
+									<FaYoutube className="text-2xl xl:text-3xl" />
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<FaGithub className="text-3xl" />
+									<FaGithub className="text-2xl xl:text-3xl" />
 								</a>
 							</li>
 						</ul>

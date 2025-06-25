@@ -23,7 +23,7 @@ const services = [
 	},
 	{
 		id: 2,
-		buttonName: "Red Ops",
+		buttonName: "PTaaS",
 		title: "Red Team as a Service (RTaaS)",
 		description:
 			"Our RTaaS offers advanced, stealthy simulations of real-world cyberattacks to rigorously evaluate your organization’s detection, response, and defense mechanisms. Led by seasoned red team professionals, we expose hidden risks, validate security controls, and continuously enhance your security posture without disrupting business operations.",
@@ -33,7 +33,7 @@ const services = [
 	},
 	{
 		id: 3,
-		buttonName: "Surface",
+		buttonName: "ASM",
 		title: "Attack Surface Management (ASM)",
 		description:
 			"ASM is a proactive, continuous cybersecurity discipline that identifies, monitors, and reduces your organization’s exposed digital assets and vulnerabilities. By delivering real-time visibility and comprehensive risk mitigation across all attack vectors, ASM prevents unauthorized access and minimizes breach potential.",
@@ -43,7 +43,7 @@ const services = [
 	},
 	{
 		id: 4,
-		buttonName: "Auto Test",
+		buttonName: "CTP",
 		title: "Continuous Penetration Testing (CTP)",
 		description:
 			"CTP is an ongoing security engagement that persistently replicates sophisticated cyberattacks to discover and remediate vulnerabilities before they can be exploited. This adaptive approach ensures your defenses evolve with emerging threats, maintaining robust and uninterrupted protection.",
@@ -53,7 +53,7 @@ const services = [
 	},
 	{
 		id: 5,
-		buttonName: "Threat Mgmt",
+		buttonName: "CETM",
 		title: "Continuous Exposure Threat Management (CETM)",
 		description:
 			"CETM is a dynamic threat management framework that continuously detects, assesses, and mitigates exposure risks within your digital environment. By enabling real-time threat identification and response, CETM significantly reduces your attack surface and strengthens overall cybersecurity resilience.",
@@ -109,7 +109,7 @@ export default function Services() {
 					Expert-Led Offensive Security Services
 				</h2>
 
-				<div className="bg-background/10 hidden md:block w-max overflow-x-auto mx-auto rounded-lg my-12">
+				<div className="bg-background/10 hidden md:grid grid-cols-5  w-7/12 overflow-x-auto mx-auto rounded-lg my-12">
 					{services.map((service) => (
 						<button
 							key={service.id}
