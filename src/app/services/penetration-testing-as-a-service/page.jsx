@@ -6,9 +6,9 @@ import Services from "@/components/pentest/Services";
 import WhyRedhackPTaaS from "@/components/services/WhyRedhackPTaaS";
 import AdvancedPTaas from "@/components/services/AdvancedPTaas";
 import RedhackSecurity from "@/components/services/RedhackSecurity";
-import EnterpriceSolutions from "@/components/services/EnterpriceSolutions";
 import RedhackCertificate from "@/components/common/RedhackCertificate";
 import CTA from "@/components/common/CTA";
+import EnterpriseSolutions from "@/components/pentest/EnterpriseSolutions";
 
 export default function page() {
 	return (
@@ -25,7 +25,7 @@ export default function page() {
 			<WhyRedhackPTaaS />
 			<AdvancedPTaas />
 			<RedhackSecurity />
-			<EnterpriceSolutions />
+			<EnterpriseSolutions />
 			<RedhackCertificate />
 			<CTA />
 		</div>
