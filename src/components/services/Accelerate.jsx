@@ -4,7 +4,7 @@ export default function Accelerate() {
 	return (
 		<div className="lg:px-0 px-5 lg:py-20 py-12">
 			<div className="container text-center">
-				<h2>
+				<h2 className="text-main">
 					Accelerate Security Outcomes with Real-Time Intelligence
 				</h2>
 				<p>

@@ -1,0 +1,61 @@
+import serviceImg1 from "@/assets/images/pentest-service-image-1.png";
+import serviceImg2 from "@/assets/images/pentest-service-image-1.png";
+import serviceImg3 from "@/assets/images/pentest-service-image-1.png";
+import serviceImg4 from "@/assets/images/pentest-service-image-1.png";
+import serviceImg5 from "@/assets/images/pentest-service-image-1.png";
+import serviceImg6 from "@/assets/images/pentest-service-image-1.png";
+
+import Image from "next/image";
+
+const services = [
+	{
+		title: "Application Pentest",
+		icon: serviceImg1,
+	},
+	{
+		title: "Dynamic ApplicationSecurity Testing",
+		icon: serviceImg2,
+	},
+	{
+		title: "Static ApplicationSecurity Testing",
+		icon: serviceImg3,
+	},
+	{
+		title: "Secure Code Review",
+		icon: serviceImg4,
+	},
+	{
+		title: "Fuzz Testing for APIs",
+		icon: serviceImg5,
+	},
+	{
+		title: "Application Security Posture Management",
+		icon: serviceImg6,
+	},
+];
+
+export default function ApplicationSecurityCards() {
+	return (
+		<div className="services bg-accent text-background lg:px-0 px-5 lg:py-20 py-12 text-center">
+			<h2>Continues, On-Demand Pentesting Powirng Redhack Security</h2>
+			<div className="container grid md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 pt-14 text-left">
+				{services.map((service, idx) => (
+					<div
+						key={idx}
+						className="card flex items-center gap-4 bg-background/10 backdrop-blur-3xl hover:bg-background/15 rounded-xl lg:px-4 px-3 lg:py-6 py-4 duration-300"
+					>
+						<Image
+							src={service.icon}
+							alt="service icon"
+							className="lg:w-24 w-14 invert-100"
+						/>
+
+						<h3 className="lg:text-2xl text-xl font-gilroy font-semibold">
+							{service.title}
+						</h3>
+					</div>
+				))}
+			</div>
+		</div>
+	);
+}
