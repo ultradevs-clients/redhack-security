@@ -1,0 +1,20 @@
+.contact-us {
+	.header {
+		background-image: url("../../images/bg-texture2.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		@apply pt-18 lg:h-[400px] md:h-[400px] h-[300px] bg-cover bg-accent text-background flex items-center flex-col justify-center;
+	}
+	.country-code {
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		@apply border-accent/10 bg-accent/5;
+	}
+	.number-input {
+		border-top: 1px solid;
+		border-right: 1px solid;
+		border-bottom: 1px solid;
+		border-left: 0;
+		@apply border-accent/10 bg-accent/5;
+	}
+}

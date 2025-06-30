@@ -15,15 +15,33 @@ export default function MobileSidebar() {
 		{
 			title: "Services",
 			submenu: [
-				{ title: "Penetration Testing As A Service(PTaaS)", link: "" },
-				{ title: "Red Team As A Service (RTaaS)", link: "" },
-				{ title: "Attack Surface Management(ASM)", link: "" },
-				{ title: "Continoues Penetration Testing(CTP)", link: "" },
-				{ title: "Penetration Testing Service", link: "" },
-				{ title: "Application Security Testing", link: "" },
+				{
+					title: "Penetration Testing As A Service(PTaaS)",
+					link: "/services/penetration-testing-as-a-service",
+				},
+				{
+					title: "Red Team As A Service (RTaaS)",
+					link: "/services/red-team-as-a-service",
+				},
+				{
+					title: "Attack Surface Management(ASM)",
+					link: "/services/attack-surface-management",
+				},
+				{
+					title: "Continoues Penetration Testing(CTP)",
+					link: "/services/continoues-penetration-testing",
+				},
+				{
+					title: "Penetration Testing Service",
+					link: "/services/penetration-testing-service",
+				},
+				{
+					title: "Application Security Testing",
+					link: "/services/application-security-testing",
+				},
 				{
 					title: "Continuous Exposure Threat Management(CETM)",
-					link: "",
+					link: "/services/continuous-exposure-threat-management",
 				},
 			],
 		},
@@ -62,7 +80,7 @@ export default function MobileSidebar() {
 
 	return (
 		mobileNav && (
-			<div className="mobile-nav absolute z-50 top-0 left-0 w-full min-h-screen bg-accent px-5 text-background">
+			<div className="mobile-nav sticky z-50 top-0 left-0 w-full min-h-screen bg-accent px-5 text-background ">
 				<nav className="flex items-center justify-between py-6">
 					<Link
 						className="logo text-3xl  font-inter font-bold"

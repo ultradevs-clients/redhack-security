@@ -25,3 +25,5 @@
 @import "./services/why-redhack/why-redhack.css";
 @import "./services/advancedPTaas/advanced-ptaas.css";
 @import "./services/enterprice/enterprice.css";
+@import "./contact-us/contact-us.css";
+@import "tw-animate-css";

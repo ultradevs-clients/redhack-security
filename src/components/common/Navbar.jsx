@@ -125,7 +125,9 @@ export default function Navbar() {
 
 				<div className="space-x-4 navbar-button hidden lg:block">
 					<button className="btn btn--nav">Login</button>
-					<button className="btn btn--nav">Contact Us</button>
+					<Link href={"/contact-us"}>
+						<button className="btn btn--nav">Contact Us</button>
+					</Link>
 				</div>
 				<button
 					onClick={() => setMobileNav(true)}
