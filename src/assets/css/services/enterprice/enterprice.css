@@ -1,0 +1,9 @@
+.enterprice {
+	@apply duration-300;
+	&:hover {
+		@apply h-full;
+		p {
+			@apply opacity-100;
+		}
+	}
+}

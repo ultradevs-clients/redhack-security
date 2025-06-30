@@ -43,37 +43,37 @@ export default function Navbar() {
 						<ul className="nav-dropdown">
 							<h3>Services</h3>
 							<li>
-								<Link href="/">
+								<Link href="/services/penetration-testing-as-a-service">
 									Penetration Testing As A Service (PTaaS)
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
+								<Link href="/services/red-team-as-a-service">
 									Red Team As A Service (RTaaS)
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
+								<Link href="/services/attack-surface-management">
 									Attack Surface Management (ASM)
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
+								<Link href="/services/continoues-penetration-testing">
 									Continoues Penetration Testing
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
+								<Link href="/services/penetration-testing-service">
 									Penetration Testing Service
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
+								<Link href="/services/application-security-testing">
 									Application Security Testing
 								</Link>
 							</li>
 							<li>
-								<Link href="/">
+								<Link href="/services/continuous-exposure-threat-management">
 									Continuous Exposure Threat Management (CETM)
 								</Link>
 							</li>
@@ -125,7 +125,9 @@ export default function Navbar() {
 
 				<div className="space-x-4 navbar-button hidden lg:block">
 					<button className="btn btn--nav">Login</button>
-					<button className="btn btn--nav">Contact Us</button>
+					<Link href={"/contact-us"}>
+						<button className="btn btn--nav">Contact Us</button>
+					</Link>
 				</div>
 				<button
 					onClick={() => setMobileNav(true)}

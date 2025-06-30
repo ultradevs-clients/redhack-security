@@ -20,3 +20,10 @@
 @import "./pentest/cta/cta.css";
 @import "./pentest/wstg/wstg.css";
 @import "./pentest/pentesting-details/pentesting-details.css";
+
+/* Services Page */
+@import "./services/why-redhack/why-redhack.css";
+@import "./services/advancedPTaas/advanced-ptaas.css";
+@import "./services/enterprice/enterprice.css";
+@import "./contact-us/contact-us.css";
+@import "tw-animate-css";
