@@ -40,7 +40,7 @@ export default function RedhackCertificate() {
 						Globally Certified Experts Powering RedHack Security
 					</h2>
 					<div className="flex mx-auto justify-start lg:justify-center items-center overflow-x-auto lg:pt-10 pt-5 gap-10 pb-5 scrollbar-thin scrollbar-hide">
-						{certificates.map((certificate, idx) => (
+						{certificates?.map((certificate, idx) => (
 							<Image
 								key={idx}
 								src={certificate.img}
