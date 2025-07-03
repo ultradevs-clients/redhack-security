@@ -19,7 +19,7 @@ export default function page() {
 				title="Offensive Red Team as a Service (RTasS)"
 				description="Simulate real attacks to uncover gaps in your cyber defenses."
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<ExposeWeakness />

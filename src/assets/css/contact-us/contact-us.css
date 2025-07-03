@@ -3,7 +3,7 @@
 		background-image: url("../../images/bg-texture2.png");
 		background-repeat: no-repeat;
 		background-position: center;
-		@apply pt-18 lg:h-[400px] md:h-[400px] h-[300px] bg-cover bg-accent text-background flex items-center flex-col justify-center;
+		@apply pt-24 lg:pt-18 lg:h-[400px] md:h-[400px] h-[350px] bg-cover bg-accent text-background flex items-center flex-col justify-center;
 	}
 	.country-code {
 		border-top: 1px solid;

@@ -17,7 +17,7 @@ export default function page() {
 				title="Offensive Penetration Testing as a Service (PTaaS)"
 				description=" Trusted, Continuous Pentesting for Faster, Smarter Remediation"
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<ExposeWeakness />

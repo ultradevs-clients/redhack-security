@@ -155,7 +155,7 @@ export default function page() {
 				title=" Offensive  Application Penetration Testing"
 				description="Identify critical flaws with real-world attack simulations by experts."
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<ExposeWeakness />

@@ -143,9 +143,23 @@ export default function MobileSidebar() {
 					))}
 				</ul>
 
-				<div className="space-y-4 navbar-button py-8">
-					<button className="btn btn--nav">Login</button>
-					<button className="btn btn--nav">Contact Us</button>
+				<div className="flex flex-col gap-4 navbar-button py-8">
+					<Link href="/login">
+						<button
+							onClick={() => setMobileNav(false)}
+							className="btn btn--nav"
+						>
+							Login
+						</button>
+					</Link>
+					<Link href="/contact-us">
+						<button
+							onClick={() => setMobileNav(false)}
+							className="btn btn--nav"
+						>
+							Contact Us
+						</button>
+					</Link>
 				</div>
 			</div>
 		)

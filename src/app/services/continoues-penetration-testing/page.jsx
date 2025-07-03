@@ -14,7 +14,7 @@ export default function page() {
 				title="Offensive Continues Penetration Testing"
 				description=" Continuous pentesting that accelerates security & reduces risk."
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<Accelerate />
