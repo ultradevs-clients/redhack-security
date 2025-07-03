@@ -5,6 +5,9 @@ import ExposeWeakness from "@/components/common/ExposeWeakness";
 import PentestingDetails from "@/components/common/PentestingDetails";
 import pentestImg1 from "@/assets/images/internal-pentesting.png";
 import HowRedHackAligns from "@/components/services/HowRedHackAligns";
+import ServiceDetails from "@/components/services/ServiceDetails";
+import RedhackCertificate from "@/components/common/RedhackCertificate";
+import CTA from "@/components/common/CTA";
 
 const pentestingServices = [
 	{
@@ -81,6 +84,9 @@ export default function page() {
 				}
 			/>
 			<HowRedHackAligns />
+			<ServiceDetails />
+			<RedhackCertificate />
+			<CTA />
 		</div>
 	);
 }
