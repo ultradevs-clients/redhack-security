@@ -155,7 +155,7 @@ export default function page() {
 				title="Offensive Attack Surface management(ASM)"
 				description="RedHack ASM continuously finds and prioritizes critical attacker entry points."
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<ExposeWeakness />

@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { FaAsterisk } from "react-icons/fa";
 import PhoneInput from "@/components/contact/PhoneInput";
-import { useState } from "react";
 import { CountrySelect } from "@/components/contact/CountrySelect";
 import TopicSelect from "@/components/contact/TopicSelect";
 import { Textarea } from "@/components/ui/textarea";
@@ -30,7 +29,7 @@ export default function page() {
 
 	return (
 		<div className="contact-us">
-			<div className="header px-5 lg:px-0">
+			<div className="header px-5 lg:px-0 text-center">
 				<h2 className="lg:!text-5xl">
 					Connect With RedHack Security Inc.
 				</h2>
@@ -233,11 +232,6 @@ export default function page() {
 								{errors.topic.message}
 							</p>
 						)}
-
-						{/* <TopicSelect
-							value={selectedTopic}
-							onChange={setSelectedTopic}
-						/> */}
 					</div>
 
 					<div className="grid w-full items-center gap-3 col-span-2">

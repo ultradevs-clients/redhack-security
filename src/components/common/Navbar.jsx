@@ -124,7 +124,9 @@ export default function Navbar() {
 				</ul>
 
 				<div className="space-x-4 navbar-button hidden lg:block">
-					<button className="btn btn--nav">Login</button>
+					<Link href={"/login"}>
+						<button className="btn btn--nav">Login</button>
+					</Link>
 					<Link href={"/contact-us"}>
 						<button className="btn btn--nav">Contact Us</button>
 					</Link>

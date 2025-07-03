@@ -18,7 +18,7 @@ export default function page() {
 				title="Offensive Penetration Testing Services"
 				description="Identify vulnerabilities before attackers do with expert pentesting."
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<StayAhead />

@@ -69,7 +69,7 @@ export default function page() {
 				title="RedHack Continuos Threat Exposure Management (CETM)"
 				description="RedHack unifies PTaaS, ASM & Red Teaming for proactive security."
 				btn1={{ name: "Book a Demo", path: "/" }}
-				btn2={{ name: "Contact Us", path: "/" }}
+				btn2={{ name: "Contact Us", path: "/contact-us" }}
 				img={img}
 			/>
 			<ExposeWeakness />
