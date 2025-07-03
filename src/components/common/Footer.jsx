@@ -12,7 +12,7 @@ import logo from "@/assets/images/logo.png";
 
 export default function Footer() {
 	return (
-		<div className="footer bg-accent text-background pt-12 lg:pt-20 px-5 md:px-0">
+		<div className="footer bg-accent text-background pt-12 lg:pt-20 px-5 lg:px-0">
 			<div className="container flex lg:flex-row flex-col gap-12 ">
 				<div>
 					<Link className="text-3xl font-inter font-bold" href="/">

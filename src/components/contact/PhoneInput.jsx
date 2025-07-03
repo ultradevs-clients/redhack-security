@@ -20,8 +20,9 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChevronsUpDown, Check } from "lucide-react";
 import flags from "react-phone-number-input/flags";
 import { getCountryCallingCode } from "react-phone-number-input";
+import { manualCountryList } from "@/provider/manualCountryList";
 
-export default function PhoneInput({ onChange, defaultCountry = "US" }) {
+export default function PhoneInput({ onChange, defaultCountry = "BD" }) {
 	const [country, setCountry] = useState(defaultCountry);
 	const [nationalNumber, setNationalNumber] = useState("");
 
@@ -44,8 +45,9 @@ export default function PhoneInput({ onChange, defaultCountry = "US" }) {
 				+{getCountryCallingCode(country)}
 			</div>
 			<Input
+				id="phoneNumber"
 				type="tel"
-				className="rounded-s-none rounded-e-2xl number-input "
+				className="rounded-s-none rounded-e-2xl py-5 number-input backdrop-blur-3xl"
 				value={nationalNumber}
 				onChange={(e) => {
 					const onlyDigits = e.target.value.replace(/\D/g, "");
@@ -65,13 +67,13 @@ function CountrySelect({ value, onChange, options }) {
 			<PopoverTrigger asChild>
 				<Button
 					variant="outline"
-					className="rounded-e-none rounded-s-2xl hover:bg-accent/10 border-accent/10 bg-accent/5 flex gap-1 min-w-[80px]"
+					className="rounded-e-none py-5 backdrop-blur-3xl rounded-s-2xl hover:bg-accent/10 border-accent/10 bg-accent/5 flex gap-1 min-w-[80px]"
 				>
 					<Flag country={value} />
 					<ChevronsUpDown className="w-4 h-4 ml-1" />
 				</Button>
 			</PopoverTrigger>
-			<PopoverContent className="w-72 p-0 bg-background border-background/20">
+			<PopoverContent className="w-72 p-0 bg-background border-background/30">
 				<Command>
 					<CommandInput
 						value={search}
@@ -127,32 +129,32 @@ function CountrySelect({ value, onChange, options }) {
 function Flag({ country }) {
 	const FlagIcon = flags[country];
 	return (
-		<span className="w-5 h-3 rounded-sm overflow-hidden">
+		<span className="w-5 h-3 rounded-sm overflow-hidden ">
 			{FlagIcon ? <FlagIcon title={country} /> : null}
 		</span>
 	);
 }
 
-const manualCountryList = [
-	{ value: "US", label: "United States" },
-	{ value: "IN", label: "India" },
-	{ value: "GB", label: "United Kingdom" },
-	{ value: "CA", label: "Canada" },
-	{ value: "AU", label: "Australia" },
-	{ value: "DE", label: "Germany" },
-	{ value: "FR", label: "France" },
-	{ value: "JP", label: "Japan" },
-	{ value: "CN", label: "China" },
-	{ value: "BR", label: "Brazil" },
-	{ value: "ZA", label: "South Africa" },
-	{ value: "NG", label: "Nigeria" },
-	{ value: "RU", label: "Russia" },
-	{ value: "IT", label: "Italy" },
-	{ value: "ES", label: "Spain" },
-	{ value: "MX", label: "Mexico" },
-	{ value: "AR", label: "Argentina" },
-	{ value: "KR", label: "South Korea" },
-	{ value: "SE", label: "Sweden" },
-	{ value: "NL", label: "Netherlands" },
-	// ✅ Add or reorder as needed
-];
+// const manualCountryList = [
+// 	{ value: "US", label: "United States" },
+// 	{ value: "IN", label: "India" },
+// 	{ value: "GB", label: "United Kingdom" },
+// 	{ value: "CA", label: "Canada" },
+// 	{ value: "AU", label: "Australia" },
+// 	{ value: "DE", label: "Germany" },
+// 	{ value: "FR", label: "France" },
+// 	{ value: "JP", label: "Japan" },
+// 	{ value: "CN", label: "China" },
+// 	{ value: "BR", label: "Brazil" },
+// 	{ value: "ZA", label: "South Africa" },
+// 	{ value: "NG", label: "Nigeria" },
+// 	{ value: "RU", label: "Russia" },
+// 	{ value: "IT", label: "Italy" },
+// 	{ value: "ES", label: "Spain" },
+// 	{ value: "MX", label: "Mexico" },
+// 	{ value: "AR", label: "Argentina" },
+// 	{ value: "KR", label: "South Korea" },
+// 	{ value: "SE", label: "Sweden" },
+// 	{ value: "NL", label: "Netherlands" },
+
+// ];
